@@ -55,8 +55,3 @@ external-api:
 using:
   spring:
     schedulerFactory: true
-
-
-
-
-

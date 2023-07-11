@@ -45,3 +45,23 @@ datasource:
   offering to do this for you.). When enabled, it will replace the normal Reformat Code action, which can be triggered
   from the Code menu or with the Ctrl-Alt-L (by default) keyboard shortcut.
 
+# Supported endpoints
+
+* GET /currency-rate/list
+
+  Description: Used to get currency rate list
+  Parameters: \
+  Pageable request - used to configure page parameters (sorting, page size, etc.)
+  \ CurrencyRateFilter filter - used to filter elements in the request (supported filtering: set of ids, nameA,nameB,
+  etc.)
+
+Returns 200 if success
+
+* GET /currency-rate/{id}
+
+Description: Used to get currency rate by id
+Parameters: id
+
+Returns 200 if success
+Returns 500 and throws entity not found exception
+

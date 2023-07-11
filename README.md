@@ -40,7 +40,11 @@ datasource:
 - execute `mvn fmt:format` command in console
 - Install Idea `google-java-format` plugin. The plugin will be disabled by default. To enable it in the current project,
   go to `File→Settings...→google-java-format Settings` (or `IntelliJ
-  IDEA→Preferences...→Other Settings→google-java-format Settings` on macOS) and uncheck the Enable `google-java-format`
+  IDEA→Preferences...→Other Settings→google-java-format Settings` on macOS) and uncheck the Enable `google-java-format` checkbox.
+  (A notification will be presented when you first open a project
+  offering to do this for you.). When enabled, it will replace the normal Reformat Code action, which can be triggered
+  from the Code menu or with the Ctrl-Alt-L (by default) keyboard shortcut.
+
 
   # Supported endpoints
 
@@ -55,12 +59,9 @@ datasource:
 
 * GET /currency-rate/{id}
 
-  Description: Used to get currency rate by id
-  Parameters: id
-  Returns 200 if success
+  Description: Used to get currency rate by id \
+  Parameters: id \
+  Returns 200 if success \
   Returns 500 and throws entity not found exception
 
-  checkbox. (A notification will be presented when you first open a project
-  offering to do this for you.). When enabled, it will replace the normal Reformat Code action, which can be triggered
-  from the Code menu or with the Ctrl-Alt-L (by default) keyboard shortcut.
 
